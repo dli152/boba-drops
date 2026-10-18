@@ -5,7 +5,6 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles.css">
     <title>David Li</title>
 </head>
 <body>
@@ -82,6 +81,15 @@
 <div class="flex">
     <div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"><p style="color: #00ffff">circle</p></div>
 </div>
+
+<div id="comments">
+    <h3>Comments</h3>
+    <textarea rows="3" cols="50"></textarea><br>
+    <button onclick="submitComment()">Submit</button></a>
+</div>
+<div id="comments2" hidden>
+    <img src="https://media1.tenor.com/m/d0l4L0FeEsoAAAAC/dont-need-you-angry.gif">
+</div>
 </body>
 
 <script>
@@ -94,6 +102,11 @@
             return Math.ceil((targetDate - today) / (1000 * 60 * 60 * 24));
         })()
         + " days";
+
+    function submitComment() {
+        document.getElementById("comments").hidden = true;
+        document.getElementById("comments2").hidden = false;
+    }
 </script>
 
 <!-- I had to put css here cuz gh pages idk -->
