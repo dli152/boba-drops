@@ -9,6 +9,91 @@
     <title>David Li</title>
 </head>
 <body>
-    <h1>David's Page</h1>
+<h1>David's Page</h1>
+<marquee behavior="slide" scrollamount="100">My name is David</marquee>
+<h1>Tech Experience</h1>
+<table>
+    <tr>
+        <th>Thing</th>
+        <th>How much experience</th>
+        <th>Do I like it</th>
+    </tr>
+    <tr>
+        <td>Web design</td>
+        <td>4 yrs</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td>Java</td>
+        <td>7 yrs</td>
+        <td>Yes</td>
+    </tr>
+    <tr>
+        <td>C++</td>
+        <td>5 yrs</td>
+        <td>Yes</td>
+    </tr>
+    <tr>
+        <td>GW-BASIC</td>
+        <td>10 yrs</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td>Unreal Enigne</td>
+        <td>4 yrs</td>
+        <td>Yes</td>
+    </tr>
+    <tr>
+        <td>Linux</td>
+        <td>10 yrs</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td>Windows</td>
+        <td>10 yrs</td>
+        <td>Yes</td>
+    </tr>
+    <tr>
+        <td>Mac</td>
+        <td>30 mins</td>
+        <td>No</td>
+    </tr>
+</table>
+<h2>First computer</h2>
+<img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/IBM_PC_XT_%28transparent%29.png/250px-IBM_PC_XT_%28transparent%29.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail">
+<p>IBM XT 5160 with <strong>EGA graphics</strong></p>
+<h1>I don't like css</h1>
+<p>It's hard being creative</p>
+<h1>I do BJJ</h1>
+<p id="birthdaycountdown">My birthday is in 69 days</p>
+<h1>Favorite Games</h1>
+<div class="flex">
+    <div><h3>Ready or Not</h3><img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfPMaOGYt91l2cs45rZbcRNTihrT8AIuaFaqOMNIdb0Qf59mijByN3CWQdpFuwAcTIxTPb3g&s=10" width="200">
+    </div>
+    <div><h3>CS2</h3><img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUOI6Q1PUicfdPxnArqJUqwA86aZaJahu6IkM9w96N1g&s" width="200">
+    </div>
+</div>
+<h1>I like tortoises</h1>
+<h2>I don't get why a div is needed for circles</h2>
+<div class="circle"></div>
+<h3>Here are more circles</h3>
+<div class="flex">
+    <div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"><p style="color: #00ffff">circle</p></div>
+</div>
 </body>
+
+<script>
+    document.getElementById("birthdaycountdown").innerHTML = "My birthday is in " + (() => {
+            const today = new Date();
+            let targetDate = new Date(today.getFullYear(), 2, 22);
+            if (today > targetDate) {
+                targetDate.setFullYear(today.getFullYear() + 1);
+            }
+            return Math.ceil((targetDate - today) / (1000 * 60 * 60 * 24));
+        })()
+        + " days";
+</script>
+
 </html>
