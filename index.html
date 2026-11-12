@@ -64,7 +64,6 @@
 <h1>I don't like css</h1>
 <p>It's hard being creative</p>
 <h1>I do BJJ</h1>
-<p id="birthdaycountdown">My birthday is in 69 days</p>
 <h1>Favorite Games</h1>
 <div class="flex">
     <div><h3>Ready or Not</h3><img
@@ -72,6 +71,9 @@
     </div>
     <div><h3>CS2</h3><img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUOI6Q1PUicfdPxnArqJUqwA86aZaJahu6IkM9w96N1g&s" width="200">
+    </div>
+    <div><h3>Black ops 2</h3><img
+            src="https://s3.amazonaws.com/gameopedia_covers/covers/247601/50008f52d376c200ced0bb208e09fd6f.jpg" width="200">
     </div>
 </div>
 <h1>I like tortoises</h1>
@@ -81,33 +83,7 @@
 <div class="flex">
     <div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"></div><div class="circle"><p style="color: #00ffff">circle</p></div>
 </div>
-
-<div id="comments">
-    <h3>Comments</h3>
-    <textarea rows="3" cols="50"></textarea><br>
-    <button onclick="submitComment()">Submit</button></a>
-</div>
-<div id="comments2" hidden>
-    <img src="https://media1.tenor.com/m/d0l4L0FeEsoAAAAC/dont-need-you-angry.gif">
-</div>
 </body>
-
-<script>
-    document.getElementById("birthdaycountdown").innerHTML = "My birthday is in " + (() => {
-            const today = new Date();
-            let targetDate = new Date(today.getFullYear(), 2, 22);
-            if (today > targetDate) {
-                targetDate.setFullYear(today.getFullYear() + 1);
-            }
-            return Math.ceil((targetDate - today) / (1000 * 60 * 60 * 24));
-        })()
-        + " days";
-
-    function submitComment() {
-        document.getElementById("comments").hidden = true;
-        document.getElementById("comments2").hidden = false;
-    }
-</script>
 
 <!-- I had to put css here cuz gh pages idk -->
 
